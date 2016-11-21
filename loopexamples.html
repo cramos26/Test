@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Loop Examples </title>
+</head>
+<body>
+<p> Random information related to Los Angeles:</p>
+<p id="input"></p>
+<script>
+var info = {city:"Metropolitan", population:" 3.884 million", location:" Southern California"};
+var emptyarray = ""; //Empty array so that we can add into it
+var i;
+for (i in info){ //
+  emptyarray = emptyarray + info[i]; //Fills in the empty array with the next characteristic of the object "info"
+}
+document.getElementById("input").innerHTML = emptyarray;
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Do/While Example </title>
+</head>
+<body>
+<p> Brainstorming ideas:  </p>
+<p id="list"></p>
+<script>
+var i = 1;
+var emptyarray = "";
+do { //The code is run first at least once then checked
+  emptyarray += " Idea#" + i + "_____________ <br>"; //This allows us to create a list so that we could write down ideas
+  i++;
+}
+while (i < 4);
+document.getElementById("list").innerHTML = emptyarray;
+</script>
+</body>
+</html>

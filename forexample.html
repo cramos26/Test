@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> For Example </title>
+</head>
+<body>
+<p> My grocery list items list includes: </p>
+<p id="list"></p>
+<script>
+var grocerylist = ["Bannanas", " Apples", " Oranges", " Tortilla Chips", " Mangos"];
+var emptyarray = "";
+var i;
+for (i = 0; i < grocerylist.length; i++){
+  emptyarray += grocerylist[i] + "<br>";
+}
+document.getElementById("list").innerHTML = emptyarray;
+</script>
+</body>
+</html>
